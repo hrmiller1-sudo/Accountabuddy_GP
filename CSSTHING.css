@@ -1,0 +1,92 @@
+body { background-color: #89CFF0;
+	color: 
+	font-family: Arial, Verdana, sans-serif;}
+
+@supports (display: grid) {
+      #wrapper { display: grid;
+		grid-template:
+		"logo   header   header"  100px
+		"nav      nav     nav    "
+                "                         "   auto
+		"footer   footer   footer"  50px
+		/ 150px   1fr     300px ;    }
+       
+	
+
+
+
+
+main div {
+  border: 2px solid #5097A4;
+  padding: 15px;
+  margin:  15px;
+  border-radius: 10px;
+  background-color: #D4EBFF;
+}
+
+header {grid-area: header;
+	 }
+
+h1 { 
+	font-size: 50px;
+	border-radius: 30px;
+	color: #000000;
+	font-family: Georgia, "Times New Roman", serif;
+	line-height: 1.1;
+	text-align: center;
+	text-shadow: 3px 2px 3px #89CFF0;}
+.logo {
+  width: 80px;
+  background-color: #5097A4;   }
+
+.headerA {
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+background-color: #5097A4;  
+  padding: 3px 5px;        
+  border-radius: 30px; }
+
+
+
+
+nav { 
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 1.25em;
+  padding: 5px;
+}
+
+nav a {
+  text-align: center;
+  padding: 2px 20px;
+  background-color: #68ADE5;
+  text-decoration: none;
+  border-radius: 5px;}
+
+nav a:link { color: #00005D; }
+nav a:visited { color: #eaeaea; }
+nav a:hover {   background-color: blue;
+            color: #869dc7;}
+
+h2 {   }
+
+p {}
+
+ul {}
+
+nav a {}
+
+footer {  grid-area: footer;
+        background_color: lightblue;
+	font-family: Arial, sans-serif;
+	color: darkblue;
+	font-style: italic;
+	padding: 10px;
+	border: 1px dashed darkblue;  }
