@@ -39,6 +39,10 @@ h1 { font-size: 50px;
   background-color: #5097A4;   }
 
 
+img { max-height: 150px;
+	max-wdith:250px;
+	width:240px;
+	height: 150px; }
 
 
 
