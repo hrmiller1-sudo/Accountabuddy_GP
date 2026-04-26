@@ -180,3 +180,24 @@ footer {
     padding: 20px;
   }
 }
+.features-link {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.features-link a {
+  display: inline-block !important;
+  border: 2px solid #18BFC0 !important;
+  border-radius: 18px !important;
+  padding: 18px 60px !important;
+  background-color: #F4FAFC !important;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0E5C68;
+  transition: 0.3s ease;
+}
+
+.features-link a:hover {
+  background-color: #18BFC0;
+  color: white;
+}
