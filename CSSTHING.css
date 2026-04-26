@@ -201,3 +201,10 @@ footer {
   background-color: #18BFC0;
   color: white;
 }
+.feature-image {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 12px;
+}
