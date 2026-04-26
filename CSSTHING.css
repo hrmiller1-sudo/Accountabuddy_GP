@@ -14,17 +14,18 @@ body {
 #wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 @supports (display: grid) {
   #wrapper {
     display: grid;
     grid-template:
-      "logo header header" auto
-      "nav nav nav" auto
-      "main main main" auto
-      "footer footer footer" auto
-      / 150px 1fr 150px;
+      "header" auto
+      "nav" auto
+      "main" auto
+      "footer" auto
+      / 1fr;
   }
 }
 
@@ -34,14 +35,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
+  padding: 35px 0 10px 0;
 }
 
 .headerA {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
@@ -61,40 +62,18 @@ h1 {
   margin: 0;
 }
 
-main {
-  grid-area: main;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main div {
-  width: 95%;
-  max-width: 1150px;
-  border: 2px solid #7DB7C7;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 18px;
-  background-color: #FFFFFF;
-  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.12);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-}
-
 nav {
   grid-area: nav;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 12px;
   font-weight: bold;
   font-size: 1.15em;
-  padding: 20px;
+  padding: 15px 20px 35px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav a {
@@ -116,6 +95,27 @@ nav a:hover {
   color: white;
 }
 
+main {
+  grid-area: main;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div {
+  width: 95%;
+  max-width: 1150px;
+  border: 2px solid #7DB7C7;
+  padding: 25px;
+  margin: 20px auto;
+  border-radius: 18px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  box-sizing: border-box;
+}
+
 h2 {
   color: #0E5C68;
   text-align: center;
@@ -125,14 +125,26 @@ h2 {
 
 p {
   font-size: 1.05em;
+  text-align: center;
 }
 
 ul {
-  padding-left: 30px;
+  display: inline-block;
+  text-align: left;
+  padding-left: 25px;
+  margin: 0 auto;
 }
 
 li {
   margin-bottom: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 15px auto;
 }
 
 a {
@@ -184,7 +196,7 @@ footer {
 
   main div {
     width: 100%;
-    margin: 12px 0;
+    margin: 12px auto;
   }
 
   .logo {
