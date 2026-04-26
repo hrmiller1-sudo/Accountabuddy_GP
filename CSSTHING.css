@@ -167,3 +167,17 @@ footer {
     padding: 20px;
   }
 }
+.features-list {
+  display: inline-block;
+  text-align: left;
+}
+
+.features-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.features-link a {
+  font-weight: bold;
+  text-decoration: none;
+}
