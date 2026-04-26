@@ -95,7 +95,7 @@ p {
   font-size: 1.05em;
 }
 
-ul {
+ul, .features-list {
   display: inline-block;
   text-align: left;
   padding-left: 25px;
@@ -123,12 +123,25 @@ a:hover {
 }
 
 .features-link {
-  margin-top: 35px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .features-link a {
+  display: inline-block;
+  border: 2px solid #18BFC0;
+  border-radius: 18px;
+  padding: 18px 60px;
+  background-color: #F4FAFC;
   font-weight: bold;
   text-decoration: none;
+  color: #0E5C68;
+  transition: 0.3s ease;
+}
+
+.features-link a:hover {
+  background-color: #18BFC0;
+  color: white;
 }
 
 footer {
@@ -166,18 +179,4 @@ footer {
     width: 95%;
     padding: 20px;
   }
-}
-.features-list {
-  display: inline-block;
-  text-align: left;
-}
-
-.features-link {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.features-link a {
-  font-weight: bold;
-  text-decoration: none;
 }
