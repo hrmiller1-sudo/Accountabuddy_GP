@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - AccountaBuddy</title>
+
+    <style>
+
+textarea { display: block; margin-top: 10px; }
+
+legend { font-family: Georgia, "Times New Roman", serif;
+	font-weight: bold; }
+
+form {display: grid;
+	background-color: #EAEAEA;
+	font-family: Arial, sans-serif;
+	width: 300px; padding: 10px;
+	 }
+
+</style>
 </head> 
 
 <body>
@@ -54,6 +69,22 @@
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" required><br><br>
         </fieldset>
+        
+        <fieldset>
+<legend>What do you need help managing?</legend>
+<br>
+
+Select intrest(s):<br><br>
+
+<input type="checkbox" name="favmus[]" id="favworkouts" value="workouts"> Workouts <br>
+<input type="checkbox" name="favmus[]" id="favgeneral" value="general"> General <br>
+<input type="checkbox" name="favmus[]" id="favproffesional" value="groffesional"> Proffesional <br>
+<input type="checkbox" name="favmus[]" id="favmental_health" value="Mental health"> Mental health <br>
+<input type="checkbox" name="favmus[]" id="favschool" value="school"> School <br>
+<input type="checkbox" name="favmus[]" id="favOther" value="Other"> Other <br>
+
+</fieldset>
+      
 
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
