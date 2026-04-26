@@ -48,6 +48,16 @@ header {
   background-color: #F4FAFC;
 }
 
+.headerA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
 h1 {
   font-size: 52px;
   color: #1F2D3D;
@@ -55,25 +65,18 @@ h1 {
   line-height: 1.1;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(255,255,255,0.6);
+  margin: 0;
 }
 
 .logo {
   grid-area: logo;
-  width: 90px;
+  width: 110px;
 }
 
 img {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
-}
-
-.headerA {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  padding: 10px;
 }
 
 nav {
@@ -146,6 +149,11 @@ footer {
 @media (max-width: 768px) {
   #wrapper {
     display: block;
+  }
+
+  .headerA {
+    flex-direction: column;
+    gap: 10px;
   }
 
   h1 {
