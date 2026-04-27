@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Features - AccountaBuddy</title>
+    
+    <style>
+  body {
+    background-color: white;
+    color: black;  }
+
+  .darkmode {
+    background-color: #121212;
+    color: white;}
+
+  .Accountacolors {
+      background-color: #89CFF0;
+      color: #000; }
+</style>
+    
 </head>
 
 <body>
@@ -33,8 +48,26 @@
                 long-term growth, and meaningful accountability.
             </p>
         </div>
+         <div>
+            <h2>Pick your own theme</h2><br>
+       
 
-        <div>
+         </div>
+        
+        <button onclick="toggleMode()">Toggle dark/light mode</button>
+<script>
+        function toggleMode() {
+        document.body.classList.toggle("darkmode"); }
+
+</script>
+        <button onclick="toggleMode()">Toggle dark/light mode</button>
+        
+ <script>
+          function toggleMode() {
+          document.body.classList.toggle("Accountacolors"); }
+
+</script>
+        <div><br>
             <h2>Partner Matching</h2>
             <p>
                 Find accountability partners based on your goals and interests.
