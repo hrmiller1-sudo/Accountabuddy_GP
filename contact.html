@@ -12,11 +12,23 @@ textarea { display: block; margin-top: 10px; }
 legend { font-family: Georgia, "Times New Roman", serif;
 	font-weight: bold; }
 
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px; }
+
+label {
+    text-align: left;
+    padding-top: 5px; }
+
 form {display: grid;
 	background-color: #EAEAEA;
 	font-family: Arial, sans-serif;
-	width: 300px; padding: 10px;
-	 }
+	width: 300px; 
+        padding: 10px; }
 
 </style>
 </head> 
@@ -61,27 +73,26 @@ form {display: grid;
             <legend>Contact Information</legend>
 
             <label for="fname">First Name:</label>
-            <input type="text" name="fname" id="fname" required><br><br>
+            <input type="text" name="fname" id="fname" required>
 
             <label for="lname">Last Name:</label>
-            <input type="text" name="lname" id="lname" required><br><br>
+            <input type="text" name="lname" id="lname" required>
     
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required><br><br>
-        </fieldset>
+            <input type="email" name="email" id="email" required
+        </fieldset><br>
         
         <fieldset>
 <legend>What do you need help managing?</legend>
-<br>
 
-Select intrest(s):<br><br>
 
-<input type="checkbox" name="favmus[]" id="favworkouts" value="workouts"> Workouts <br>
-<input type="checkbox" name="favmus[]" id="favgeneral" value="general"> General <br>
-<input type="checkbox" name="favmus[]" id="favproffesional" value="groffesional"> Proffesional <br>
-<input type="checkbox" name="favmus[]" id="favmental_health" value="Mental health"> Mental health <br>
-<input type="checkbox" name="favmus[]" id="favschool" value="school"> School <br>
-<input type="checkbox" name="favmus[]" id="favOther" value="Other"> Other <br>
+
+  <label><input type="checkbox" name="favmus[]" value="workouts"> Workouts</label>
+  <label><input type="checkbox" name="favmus[]" value="general"> General</label>
+  <label><input type="checkbox" name="favmus[]" value="professional"> Professional</label>
+  <label><input type="checkbox" name="favmus[]" value="mental_health"> Mental Health</label>
+  <label><input type="checkbox" name="favmus[]" value="school"> School</label>
+  <label><input type="checkbox" name="favmus[]" value="other"> Other</label>
 
 </fieldset>
 		
@@ -102,4 +113,5 @@ Select intrest(s):<br><br>
     </footer>
     <link href = "CSSTHING.css" rel="stylesheet"> 
 </body>    
+</html>
 </html>
